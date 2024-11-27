@@ -26,9 +26,9 @@ const DashboardPage = () => {
     };
 
     return (
-        <div className="dashboard-page">
+        <div className="animated-bg dashboard-page">
             <header className="dashboard-header">
-                <h1>Welcome to ClassWise</h1>
+                <h1>Welcome to DeQueue</h1>
                 <button className="update-profile-button">Update Profile</button>
             </header>
 

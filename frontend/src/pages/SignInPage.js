@@ -4,9 +4,9 @@ import './SignInPage.css'; // Import custom CSS
 
 const SignInPage = () => {
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-blue-500 to-purple-600 text-white px-4">
+        <div className="animated-bg flex flex-col items-center justify-center h-screen bg-gradient-to-br from-blue-500 to-purple-600 text-white px-4">
             <div className="sign-in-card">
-                <h1 className="sign-in-title">Sign In to ClassWise</h1>
+                <h1 className="sign-in-title">Sign In to DeQueue</h1>
                 <form className="space-y-6">
                     <div className="input-group">
                         <label htmlFor="email" className="input-label">

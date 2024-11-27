@@ -22,7 +22,7 @@ const ProfilePage = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-blue-500 to-purple-600 text-white px-4">
+        <div className="animated-bg flex flex-col items-center justify-center h-screen bg-gradient-to-br from-blue-500 to-purple-600 text-white px-4">
             <div className="profile-card">
                 <h1 className="profile-title">Your Profile</h1>
                 <form onSubmit={handleSubmit} className="space-y-6">

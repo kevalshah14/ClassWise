@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from React Router
 import './WelcomePage.css'; // Import the CSS animation
 
 const WelcomePage = () => {
@@ -6,7 +7,7 @@ const WelcomePage = () => {
         <div className="flex flex-col items-center justify-center h-screen text-white animated-bg px-4">
             <div className="text-center max-w-3xl p-8 space-y-6">
                 <h1 className="text-4xl md:text-6xl font-extrabold">
-                    Welcome to ClassWise!
+                    Welcome to DeQueue!
                 </h1>
                 <p className="text-lg md:text-xl leading-relaxed">
                     Stay ahead with instant notifications when a seat opens for your class.
@@ -14,9 +15,11 @@ const WelcomePage = () => {
                 <p className="text-lg md:text-xl leading-relaxed">
                     Never miss an opportunity to secure your spot.
                 </p>
-                <button className="px-6 py-3 bg-white text-blue-500 font-medium text-lg rounded-lg hover:bg-gray-200 transition transform hover:scale-110 hover:shadow-lg active:scale-95">
-                    Get Started
-                </button>
+                <Link to="/signin">
+                    <button className="px-6 py-3 bg-white text-blue-500 font-medium text-lg rounded-lg hover:bg-gray-200 transition transform hover:scale-110 hover:shadow-lg active:scale-95">
+                        Get Started
+                    </button>
+                </Link>
             </div>
         </div>
     );

@@ -3,9 +3,9 @@ import './SignUpPage.css'; // Import custom CSS
 
 const SignUpPage = () => {
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-blue-500 to-purple-600 text-white px-4">
+        <div className="animated-bg flex flex-col items-center justify-center h-screen bg-gradient-to-br from-blue-500 to-purple-600 text-white px-4">
             <div className="sign-up-card">
-                <h1 className="sign-up-title">Create Your ClassWise Account</h1>
+                <h1 className="sign-up-title">Create Your DeQueue Account</h1>
                 {/* Sign-Up Form */}
                 <form className="space-y-6">
                     <div className="input-group">
