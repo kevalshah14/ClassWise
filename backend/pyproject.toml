@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "dequeue"
+version = "0.1.0"
+description = "Your ultimate escape from the endless cycle of waitlists! With DeQueue, you'll never stress about missing out on your dream class again. Our app monitors seat availability in real-time and notifies you the moment a spot opens up, so you can swoop in and secure it before anyone else. Say goodbye to the waitlist grind and hello to a smarter, faster way to enroll. DeQueue: Because life’s too short to wait in line. 🚀"
+authors = ["Keval Shah <keval.arhan@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
