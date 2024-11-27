@@ -1,0 +1,145 @@
+/* Card Layout */
+.sign-in-card {
+    background-color: white;
+    color: #333;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+/* Title */
+.sign-in-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1e293b;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+}
+
+.input-field {
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #374151;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Buttons */
+.primary-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+.primary-button:active {
+    transform: translateY(0);
+}
+
+/* OR Divider */
+.or-divider {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background-color: #e5e7eb;
+}
+
+.or-text {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 0 1rem;
+    font-weight: 600;
+}
+
+/* Google Button */
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(90deg, #ff5252, #ff7043);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.google-button:hover {
+    box-shadow: 0px 4px 15px rgba(255, 82, 82, 0.4);
+    transform: translateY(-2px);
+}
+
+.google-button:active {
+    transform: translateY(0);
+}
+
+.google-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.75rem;
+}
+
+/* Sign-Up Link */
+.sign-up-text {
+    font-size: 0.9rem;
+    color: #6b7280;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.sign-up-link {
+    color: #3b82f6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sign-up-link:hover {
+    text-decoration: underline;
+}

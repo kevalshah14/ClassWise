@@ -1,0 +1,30 @@
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animated-bg {
+    background: linear-gradient(
+        45deg,
+        #3b82f6, /* Blue */
+        #9333ea, /* Purple */
+        #6b21a8, /* Deep Purple */
+        #1d4ed8, /* Light Blue */
+        #7c3aed  /* Violet */
+    );
+    background-size: 300% 300%;
+    animation: gradientMove 8s ease-in-out infinite;
+}
