@@ -1,14 +1,27 @@
 [tool.poetry]
-name = "dequeue"
+name = "app"
 version = "0.1.0"
-description = "Your ultimate escape from the endless cycle of waitlists! With DeQueue, you'll never stress about missing out on your dream class again. Our app monitors seat availability in real-time and notifies you the moment a spot opens up, so you can swoop in and secure it before anyone else. Say goodbye to the waitlist grind and hello to a smarter, faster way to enroll. DeQueue: Because life’s too short to wait in line. 🚀"
+description = ""
 authors = ["Keval Shah <keval.arhan@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+uvicorn = "^0.32.1"
+fastapi = "^0.115.5"
+sqlalchemy = "^2.0.36"
+sqlmodel = "^0.0.22"
+asyncpg = "^0.30.0"
+psycopg2 = "^2.9.10"
+greenlet = "^3.1.1"
+python-dotenv = "^1.0.1"
+pydantic-settings = "^2.6.1"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "app.main:start"
+
