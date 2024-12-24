@@ -1,5 +1,3 @@
-# app/config.py
-
 import os
 import asyncpg  # Import asyncpg
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
@@ -91,7 +89,7 @@ class AsyncDatabaseSession:
     async def create_all(self):
         """
         Create all tables based on the SQLModel models.
-        This operation is idempotent.
+        This operation updates existing tables if needed.
         """
         async with self.engine.begin() as conn:
             await conn.run_sync(SQLModel.metadata.create_all)
@@ -107,7 +105,6 @@ class AsyncDatabaseSession:
         Provide a new asynchronous session.
         """
         return self.async_session_maker()
-
 
 db = AsyncDatabaseSession()
 

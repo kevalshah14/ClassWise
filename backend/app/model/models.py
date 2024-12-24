@@ -1,5 +1,3 @@
-# app/model/models.py
-
 from typing import List, Optional
 from sqlmodel import SQLModel, Field, Relationship
 
@@ -8,8 +6,9 @@ class Auth(SQLModel, table=True):
     __tablename__ = "auth"
 
     id: Optional[int] = Field(default=None, primary_key=True)
-    email: str = Field(index=True, unique=True, nullable=False)
-    password: str = Field(nullable=False)
+    email: Optional[str] = Field(index=True, unique=True, nullable=True)
+    password: Optional[str] = Field(nullable=True)
+    google_id: Optional[str] = Field(index=True, unique=True, nullable=True)
 
     user: Optional["User"] = Relationship(back_populates="auth", sa_relationship_kwargs={"uselist": False})
 
@@ -34,6 +33,7 @@ class Class(SQLModel, table=True):
     code: str = Field(index=True, unique=True, nullable=False)
     name: str = Field(nullable=False)
     availability: int = Field(default=0, nullable=False)
+    professor: str = Field(nullable=False)
 
     notifications: List["Notification"] = Relationship(back_populates="class_")
 
